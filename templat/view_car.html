@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <th>Company</th>
+            <th>Name</th>
+            <th>Price</th>
+        </tr>
+         {% for data in detail %}
+        <tr>
+            <td>{{data.c_company}}</td>
+            <td>{{data.c_name}}</td>
+            <td>{{data.c_price}}</td>
+        </tr>
+         {% endfor %}
+    </table>
+</body>
+</html>

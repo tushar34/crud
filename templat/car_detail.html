@@ -1,0 +1,45 @@
+{% include "header.html" %}
+{% load crispy_forms_tags %}
+
+    <form method="post">
+        {% csrf_token %}
+        <table align="center" border="1">
+            <tr>
+                <td>Enter Company:</td>
+                <td><input type="text" name="company"></td>
+            </tr>
+            <tr>
+                <td>Enter Car:</td>
+                <td><input type="text" name="car"></td>
+            </tr>
+            <tr>
+                <td>Enter Price:</td>
+                <td><input type="text" name="price"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="submit"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><a href="view_data">view</a></td>
+            </tr>
+        </table>
+    </form>
+<!--<form method="POST" enctype="multipart/form-data">-->
+<!--<table align="center" border="1">-->
+<!--    &lt;!&ndash; Security token &ndash;&gt;-->
+<!--    {% csrf_token %}-->
+
+<!--    &lt;!&ndash; Using the formset &ndash;&gt;-->
+<!--    {{ form|crispy}}-->
+
+<!--    <tr>-->
+<!--        <td align="center" colspan="2">-->
+<!--        <input  type="submit" value="Submit">-->
+<!--        </td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td colspan="2" align="center"><a href="view_data">view</a></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<!--</form>-->
+    {% include "footer.html" %}
